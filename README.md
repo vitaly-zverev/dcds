@@ -14,7 +14,7 @@
 ```
 2) Get token:
 ```
-docker logs dcds 2>&1| grep token= | cut -f2 -d= | uniq
+docker logs dcds 2>&1| grep token= | awk -Ftoken= '{print$2}' | uniq
 ```
 2) Open URL http://${DOCKER_HOST}:9898 in browser:
 ```
