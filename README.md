@@ -1,5 +1,7 @@
 ## Datascience JupyterLab RTC (DataCloud PoC)
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vitaly-zverev/dcds/HEAD?labpath=Check_Services.ipynb)
+
 *DockerHub: https://hub.docker.com/r/vzverev/dcds*
 
 ### Quick Start:
