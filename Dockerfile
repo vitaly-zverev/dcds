@@ -1,6 +1,7 @@
 FROM jupyter/datascience-notebook:ubuntu-20.04
 USER root
 RUN  apt-get update && apt-get install -y iputils-ping iputils-tracepath dnsutils iproute2 nmap \
+     gcc g++ libsasl2-dev libsasl2-modules \
      && pip install cpyvpn aiohttp asyncssh jupyterlab-git jupyterlab-language-pack-ru-RU \
      && npm install -g localtunnel \
      && wget https://gitlab.com/openconnect/vpnc-scripts/-/raw/master/vpnc-script && chmod +x vpnc-script \
