@@ -22,9 +22,9 @@ docker logs dcds 2>&1| grep token= | awk -Ftoken= '{print$2}' | tail -1
 ```
 2) Open URL http://${DOCKER_HOST}:9898 in browser:
 ```
-start http://localhost:9898 (Windows)
+start http://127.0.0.1:9898 (Windows)
 ...
-open http://localhost:9898  (MacOs, Linux)
+open http://127.0.0.1:9898  (MacOs, Linux)
 ```
 3) Login with token from #2. and setup required modules (pip install blabla etc):
 
