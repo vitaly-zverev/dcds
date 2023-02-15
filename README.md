@@ -16,7 +16,9 @@
 ```
 2) Get token:
 ```
-docker logs dcds 2>&1| grep token= | awk -Ftoken= '{print$2}' | uniq
+docker exec dcds jupyter server list 2>&1 | grep token= | awk -Ftoken= '{print$2}' |  awk -F: '{print$1}'
+or
+docker logs dcds 2>&1| grep token= | awk -Ftoken= '{print$2}' | tail -1
 ```
 2) Open URL http://${DOCKER_HOST}:9898 in browser:
 ```
