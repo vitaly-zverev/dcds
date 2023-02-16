@@ -39,7 +39,11 @@ Password:
 ```
 5) Share notebook with collaborators ( https://localtunnel.me ) :
 ```
-npm install -g localtunnel && nohup lt --port 9898 --subdomain datacloud-rpdc-12345 &
+npm install -g localtunnel && nohup lt --port 9898 --subdomain datacloud-rpdc-12345 &    ## Linux, MacOs
+or
+install node.js from https://nodejs.org/en/download/ # (Windows) 
+npm install -g localtunnel # (Windows)
+nohup lt --port 9898 # (Windows)
 ```
 
 
