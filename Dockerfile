@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:python-3.8
+FROM jupyter/datascience-notebook:ubuntu-20.04
 USER root
 RUN  apt-get update && apt-get install -y iputils-ping iputils-tracepath dnsutils iproute2 nmap \
      gcc g++ libsasl2-dev libsasl2-modules \
