@@ -1,6 +1,6 @@
 FROM jupyter/datascience-notebook:ubuntu-20.04
 USER root
-RUN  apt-get update && apt-get install -y iputils-ping iputils-tracepath dnsutils iproute2 nmap \
+RUN  apt-get update && apt-get install -y iputils-ping iputils-tracepath dnsutils iproute2 nmap telnet \
      gcc g++ libsasl2-dev libsasl2-modules \
      && pip install cpyvpn aiohttp asyncssh jupyterlab-git jupyterlab-language-pack-ru-RU sqlalchemy==2.0 pandas==1.4 psycopg[binary] \
      && npm install -g localtunnel \
